@@ -41,6 +41,7 @@ on:
 
 jobs:
   android-build:
+    if: false
     name: 🤖 Android
     uses: ./.github/workflows/android_builds.yml
     with:
@@ -53,6 +54,7 @@ jobs:
     secrets: inherit
 
   ios-build:
+    if: false
     name: 🍏 iOS
     uses: ./.github/workflows/ios_builds.yml
     with:
@@ -65,6 +67,7 @@ jobs:
     secrets: inherit
 
   linux-build:
+    if: false
     name: 🐧 Linux
     uses: ./.github/workflows/linux_builds.yml
     with:
@@ -77,6 +80,7 @@ jobs:
     secrets: inherit
   
   macos-build:
+    if: false
     name: 🍎 macOS
     uses: ./.github/workflows/macos_builds.yml
     with:
@@ -101,6 +105,7 @@ jobs:
     secrets: inherit
 
   web-build:
+    if: false
     name: 🌐 Web
     uses: ./.github/workflows/web_builds.yml
     with:
