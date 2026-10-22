@@ -124,12 +124,12 @@ jobs:
       actions: read
       packages: write
     needs:
-      - android-build
-      - ios-build
-      - linux-build
-      - macos-build
+      #- android-build
+      #- ios-build
+      #- linux-build
+      #- macos-build
       - windows-build
-      - web-build
+      #- web-build
     uses: ./.github/workflows/release.yml
     with:
       base-branch: ${{ inputs.base-branch }}
